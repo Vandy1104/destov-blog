@@ -1,0 +1,140 @@
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial;
+}
+
+.sec-header{
+  width: auto;
+  height: 100vh;
+  background-image:url('../assets/slider.jpeg');
+  background-size: cover;
+}
+
+.logo{
+  width: 100px;
+  height: auto;
+}
+
+#navbarNavDropdown ul li a{
+  color: white;
+  font-size: 13px;
+  margin-left: 12px;
+  font-weight: bold;
+}
+
+.tagline{
+  padding-top: 200px;
+  padding-left: 50px;
+}
+
+
+
+
+/* blog page css */
+
+.blog-header{
+  width: auto;
+  height: 300px;
+  background-image:url('../assets/slider.jpeg');
+}
+
+.blog-header-title{
+  padding: 40px;
+  text-align: center;
+  color: white;
+}
+
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+
+/* Add a card effect for articles */
+.card1{
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #424949;
+  margin-top: 20px;
+}
+
+
+/* Accordions */
+.accordion {
+  background-color: #424949;
+  color: #444;
+  cursor: pointer;
+  padding: 8px 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #6B8E23;
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+
+.panel ul li{
+  /* color: blue; */
+}
+
+.card1 button{
+  font-weight: bold;
+  /* font-size: 18px; */
+  color: white;
+}
+
+/* calender */
+.calender li{
+  padding-top: 8px;
+  padding-left: 35px;
+  font-size: 15px;
+}
+
+.card:hover{
+  background: cornsilk;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
